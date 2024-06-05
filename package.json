@@ -1,0 +1,13 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm --filter=!root run dev",
+    "build": "pnpm --filter=!root run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
