@@ -8,7 +8,8 @@
     "dev": "tsup --watch './src'"
   },
   "dependencies": {
-    "@monorepo/schemas": "workspace:*",
+    "@fastify/cors": "9.0.1",
+    "@monorepo/schemas": "*",
     "fastify": "4.27.0"
   },
   "devDependencies": {

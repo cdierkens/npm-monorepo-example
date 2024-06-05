@@ -1,13 +1,19 @@
 {
   "name": "root",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "dev": "pnpm --recursive --parallel run dev",
-    "build": "pnpm --recursive run build"
+    "dev": "concurrently \"yarn workspace @monorepo/api run dev\" \"yarn workspace @monorepo/web run dev\"",
+    "build": "yarn workspaces run build"
   },
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "8.2.2"
+  }
 }
