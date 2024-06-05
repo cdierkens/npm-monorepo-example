@@ -1,7 +1,7 @@
 {
-  "name": "web",
+  "name": "@monorepo/web",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@monorepo/schemas": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

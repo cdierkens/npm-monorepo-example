@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "customConditions": ["source"],
+    "composite": true
+  }
+}

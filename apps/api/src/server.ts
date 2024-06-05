@@ -1,9 +1,17 @@
 import fastify from "fastify";
+import { User } from "@monorepo/schemas";
+import cors from "@fastify/cors";
 
 const server = fastify();
 
+server.register(cors);
+
 server.get("/", async (request, reply) => {
-  return { message: "Hello World" };
+  const user: User = {
+    username: "dierkens.dev",
+  };
+
+  return { user };
 });
 
 server.listen({ port: 8080 }, (err, address) => {

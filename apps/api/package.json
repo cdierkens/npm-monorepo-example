@@ -1,16 +1,14 @@
 {
-  "name": "api",
+  "name": "@monorepo/api",
+  "private": true,
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "build": "tsup src/server.ts",
-    "dev": "tsup src/server.ts --watch './src' --onSuccess 'node dist/server.js'"
+    "build": "tsup",
+    "dev": "tsup --watch './src'"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
+    "@monorepo/schemas": "workspace:*",
     "fastify": "4.27.0"
   },
   "devDependencies": {
